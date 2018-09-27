@@ -38,7 +38,7 @@ $(document).ready(function() {
         var query = $(this).val();
         var result = index.search(query);
         resultdiv.empty();
-        $('.show-results-count').text(result.length + ' Results');
+        $('.show-results-count').text(result.length + ' Résultats');
         for (var item in result) {
             var ref = result[item].ref;
             var searchitem = '<li><a href="'+ hostname + store[ref].link+'">'+store[ref].title+'</a></li>';
