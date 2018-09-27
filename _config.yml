@@ -51,7 +51,12 @@ paginate_path: "/page:num/"
 
 # Conversion
 markdown: kramdown
-excerpt_separator: <!--more-->
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Do not publish future posts
+future: false
 
 # Assets Settings
 sass:
