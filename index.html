@@ -6,7 +6,9 @@ layout: default
 <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
-        {% if post.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+        <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">
+            <h1 id="page-title" class="page__title" itemprop="headline">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+        </a>
 
         <ul class="clear">
             <!--- Include Published date -->
