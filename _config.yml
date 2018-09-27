@@ -42,7 +42,7 @@ baseurl: ""
 include: ["_pages"]
 
 # Outputting
-permalink: /:categories/:title.html
+permalink: /:categories/:year/:month/:day/:title:output_ext
 category_dir: categories
 
 # Pagination
@@ -52,7 +52,7 @@ paginate_path: "/page:num/"
 # Conversion
 markdown: kramdown
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: <!--more-->
 incremental: false
 
 # Do not publish future posts
