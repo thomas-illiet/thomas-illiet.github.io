@@ -3,20 +3,23 @@ layout: default
 ---
 
 <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
     <header class="post-header">
+        {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+
         <ul class="clear">
-            <li><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b, %Y" }}</time></li>
-            {% if site.show_categories == 1 and page.category %}
-                {% if page.category %}
-                <li class="cats">
-                    {% for category in page.category %}
-                        <a href="{{site.baseurl}}/{{site.category_dir}}/{{category}}/">{{ category }}</a>
-                    {% endfor %}
-                </li>
-                {% endif %}
-            {% endif %}
+            <!--- Include Published date-->
+            <li><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ page.date | date: "%Y/%m/%d" }} </time></li>
+
+             <!--- Include Read time-->
+            <li><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</li>
+
+            <!--- Include github-->
+            <li><a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ page.path }}" title='Modifier cette page'>
+                <i class="fab fa-github-alt" aria-hidden="true"></i>
+            </a></li>
         </ul>
-        <h2 itemprop="name headline">{{ page.title }}</h2>
+
     </header>
 
     <div class="post-content">

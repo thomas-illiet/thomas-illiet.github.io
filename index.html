@@ -4,18 +4,23 @@ layout: default
 
 {% for post in paginator.posts %}
 <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
     <header class="post-header">
+        {% if post.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+
         <ul class="clear">
-            <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%-d %b, %Y" }}</time></li>
-            {% if site.show_categories == 1 and post.category %}
-                <li class="cats">
-                    {% for category in post.category %}
-                        <a href="{{site.baseurl}}/{{site.category_dir}}/{{category}}/">{{ category }}</a>
-                    {% endfor %}
-                </li>
-            {% endif %}
+            <!--- Include Published date -->
+            <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }} </time></li>
+
+                <!--- Include Read time -->
+            <li><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</li>
+
+            <!--- Include github -->
+            <li><a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ post.path }}" title='Modifier cette page'>
+                <i class="fab fa-github-alt" aria-hidden="true"></i>
+            </a></li>
         </ul>
-        <h2 itemprop="name headline"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h2>
+
     </header>
 
     <div class="post-content">
