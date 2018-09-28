@@ -27,12 +27,11 @@ fixed_sidebar: 1
 
 # Defaults
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
-      comments: "true"
+      comments: true
 
 # Serving
 url: "https://thomas-illiet.github.io/"
@@ -54,6 +53,18 @@ markdown: kramdown
 lsi: false
 excerpt_separator: <!--more-->
 incremental: false
+highlighter: rouge
+
+# kramdown configuration
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 # Do not publish future posts
 future: false
@@ -61,4 +72,3 @@ future: false
 # Assets Settings
 sass:
   sass_dir: assets/partials
-  style: compressed
