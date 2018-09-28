@@ -3,8 +3,7 @@
 
 @import "vars", "reset", "mixins";
 
-.wrapper { max-width: $default-width; margin: 0 auto; padding: 60px 20px; }
-
+.wrapper { max-width: $default-width; margin: 0 auto; padding: 60px 20px; font-family: $SansSerif; font-family: $Serif;}
 .user-profile { position: absolute; top: 60px; width: 100%; max-width: 300px; text-align: center; @include transition(right .3s ease-in-out);
 	&.fixed { position: fixed; }
 	.compact-header {
@@ -97,7 +96,7 @@
 
 		.post-content { font-size: 16px; line-height: 26px;
 			abbr { border-bottom: 1px dotted $grey-color-normal; cursor: help; }
-			code, kbd, pre { margin: 0; font-family: monospace; word-wrap: break-word; word-break: break-word; white-space: pre; overflow: auto; }
+			code, kbd, pre { margin: 0; font-family: $Monospace; word-wrap: break-word; word-break: break-word; white-space: pre; overflow: auto; }
 			address, cite, var { font-style: italic; }
 			blockquote { margin: 40px 0; padding-left: 30px; font-style: italic; border-left: 3px solid $grey-color-light; }
 
