@@ -8,7 +8,9 @@ layout: default
     {% if post.header %}
     <div class="page-cover-image">
         <figure>
-        <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : post.header}} alt="{{post.title}}">
+            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">
+                <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : post.header}} alt="{{post.title}}">
+            </a>
         </figure>
     </div> <!-- End Post Cover Image -->
     {% endif %}
