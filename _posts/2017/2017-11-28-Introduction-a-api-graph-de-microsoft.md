@@ -1,15 +1,14 @@
 ---
 layout: post
-date: 2017-11-28 00:00
-title: Graph API
+date: 2017-11-28
+title: Introduction à l'API Graph de Microsoft
+header: /banner/api-banner-01.png
 tags:
 - office365
 - powershell
 categories:
 - powershell
 ---
-
-![Banner](/assets/img/2017/office365/graphapi-banner.png#banner)
 
 Microsoft Graph permet de se connecter à de nombreuses ressources liées à Office 365 (utilisateurs, discussions, calendriers, groupes, etc.)
 
