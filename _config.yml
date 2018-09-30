@@ -45,7 +45,7 @@ permalink: /:categories/:year/:month/:day/:title:output_ext
 category_dir: categories
 
 # Pagination
-paginate: 10
+paginate: 5
 paginate_path: "/page:num/"
 
 # Conversion
@@ -72,3 +72,7 @@ future: false
 # Assets Settings
 sass:
   sass_dir: assets/partials
+
+# Plugins management
+plugins:
+  - jekyll-sitemap
