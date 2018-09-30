@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2017-10-13 00:00
-title: Personnaliser votre Shell
+date: 2017-10-13
+title: Personnaliser votre console Powershell
+header: /banner/powershell-banner-01.png
 tags:
 - powershell
 categories:
