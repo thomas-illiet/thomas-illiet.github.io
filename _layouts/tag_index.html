@@ -8,52 +8,63 @@ layout: default
     {% for tag in post.tags %}
         {% if tag == page.tag %}
         <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-            <header class="post-header">
-                <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">
-                    <h1 id="page-title" class="page__title" itemprop="headline">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
-                </a>
 
-                <ul class="clear">
-                    <!--- Include Published date -->
-                    <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }} </time></li>
+            {% if post.header %}
+            <div class="page-cover-image">
+                <figure>
+                    <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : post.header}} alt="{{post.title}}">
+                </figure>
+            </div> <!-- End Post Cover Image -->
+            {% endif %}
 
-                        <!--- Include Read time -->
-                    <li><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</li>
+            <div class="article-content" >
+                <header class="post-header">
+                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" role="button">
+                        <h1 id="page-title" class="page__title" itemprop="headline">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+                    </a>
 
-                    <!--- Include github -->
-                    <li><a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ post.path }}" title='Modifier cette page'>
-                        <i class="fab fa-github-alt" aria-hidden="true"></i>
-                    </a></li>
-                </ul>
+                    <ul class="clear">
+                        <!--- Include Published date -->
+                        <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%Y/%m/%d" }} </time></li>
 
-            </header>
+                            <!--- Include Read time -->
+                        <li><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</li>
 
-            <div class="post-content">
-                {{ post.excerpt }}
+                        <!--- Include github -->
+                        <li><a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ post.path }}" title='Modifier cette page'>
+                            <i class="fab fa-github-alt" aria-hidden="true"></i>
+                        </a></li>
+                    </ul>
 
-                {% if post.excerpt != post.content %}
-                    <p><a href="{{ post.url }}" role="button">Lire la suite</a></p>
-                {% endif %}
+                </header>
+
+                <div class="post-content">
+                    {{ post.excerpt }}
+
+                    {% if post.excerpt != post.content %}
+                        <p><a href="{{ post.url }}" role="button">Lire la suite</a></p>
+                    {% endif %}
+                </div>
+
+                <footer class="post-footer">
+                    <div class="share">Partager
+                        <ul class="social-networks">
+                            <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]={{post.title | strip_html }}&p[summary]={{post.excerpt | strip_html | truncate: 140 }}&p[url]={{ post.url | prepend: site.baseurl | prepend: site.url }}" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                            <li class="share-twitter"><a href="http://twitter.com/share?url={{post.url | prepend: site.url | escape}}&text={{ post.excerpt | strip_html | truncate: 140 }}&hashtags={% for tag in post.tags %}{{ tag }},{% endfor %}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+                            <li class="share-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url={{page.url | prepend: site.baseurl | prepend: site.url | escape}}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#linkedin-icon"></use></svg></a></li>
+                        </ul>
+                    </div>
+                    {% if site.show_tags == 1 and post.tags %}
+                    <div class="tags">
+                        <ul>
+                            {% for tag in post.tags %}
+                            <li><a href="{{ site.baseurl | prepend: site.url }}/tag/{{ tag }}">{{ tag }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </footer>
             </div>
-
-            <footer class="post-footer">
-                <div class="share">Partager
-                    <ul class="social-networks">
-                        <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]={{post.title | strip_html }}&p[summary]={{post.excerpt | strip_html | truncate: 140 }}&p[url]={{ post.url | prepend: site.baseurl | prepend: site.url }}" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                        <li class="share-twitter"><a href="http://twitter.com/share?url={{post.url | prepend: site.url | escape}}&text={{ post.excerpt | strip_html | truncate: 140 }}&hashtags={% for tag in post.tags %}{{ tag }},{% endfor %}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
-                        <li class="share-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url={{page.url | prepend: site.baseurl | prepend: site.url | escape}}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#linkedin-icon"></use></svg></a></li>
-                    </ul>
-                </div>
-                {% if site.show_tags == 1 and post.tags %}
-                <div class="tags">
-                    <ul>
-                        {% for tag in post.tags %}
-                        <li><a href="{{ site.baseurl | prepend: site.url }}/tag/{{ tag }}">{{ tag }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                {% endif %}
-            </footer>
         </article>
         {% endif %}
     {% endfor %}

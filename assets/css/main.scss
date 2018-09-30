@@ -68,10 +68,12 @@
 			}
 		}
 	}
-	.post { position: relative; margin: 40px 0 0; padding: 40px 40px 80px; border: 1px solid $grey-color-lightest; background: $white; box-shadow: 0 2px 3px rgba($black,.05);
+	.post { position: relative; margin: 40px 0 0; border: 1px solid $grey-color-lightest; background: $white; box-shadow: 0 2px 3px rgba($black,.05);
 		&.page { padding: 40px; }
 
-		&:first-of-type { margin: 0; }
+    &:first-of-type { margin: 0; }
+
+    .article-content { padding: 40px 40px 80px; }
 
 		.post-header {
 			ul { margin: 0 0 4px;
