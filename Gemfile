@@ -7,4 +7,5 @@ group :jekyll_plugins do
     gem "jekyll-paginate", "~> 1.1.0"
     gem "jekyll-github-metadata"
     gem "jekyll-sitemap", "~> 1.2"
+    gem "rouge", "~> 3.2.0"
 end
