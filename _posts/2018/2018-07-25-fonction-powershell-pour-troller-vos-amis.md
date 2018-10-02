@@ -14,9 +14,9 @@ Parce que parfois, une journée de travail, c'est long, très long. Il arrive m�
 
 Je vous propose alors une fonction **Powershell** qui permetra d'ouvrir **Internet Explorer** en tache de fond avec une video, sans oublier que cette fonction oblige l'ordinateur a garder le volume de l'ordinateur à **💯%**.
 
-![invoke-videotroll-01](/assets/img/2018/invoke-videotroll-01.gif)
-
 <!--more-->
+
+![invoke-videotroll-01](/assets/img/2018/invoke-videotroll-01.gif)
 
 Il est préférable de rester à **proximité** de votre collègue pour que la blague ne dure trop longtemps et qu'il/elle ne finisse pas par appeler la hotline, ce qui vous evitera bien des problèmes.
 
