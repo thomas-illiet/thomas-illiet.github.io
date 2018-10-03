@@ -73,6 +73,22 @@
 
     &:first-of-type { margin: 0; }
 
+    .page-cover-image {
+
+      position: relative;
+
+      h1 {
+        position: absolute;
+        top: 20%;
+        right: 0px;
+
+
+        border: solid white 10px;
+        border-radius: 10px 0px 0px 10px;
+        background-color: white;
+      }
+    }
+
     .article-content { padding: 40px 40px 80px; }
 
 		.post-header {
