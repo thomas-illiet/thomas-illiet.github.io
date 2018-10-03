@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2017-09-19 00:00
-title: Lab - Active Directory
+date: 2017-09-19
+title: Installation d'un Active Directory via Powershell DSC
+header: /assets/img/2017/lab/active-directory-banner.png
 tags:
 - powershell
 - powershell dsc
@@ -9,17 +10,15 @@ categories:
 - lab
 ---
 
-![active-directory-banner](/assets/img/2017/lab/active-directory-banner.png#banner)
+Cet article montre comment créer un environnement Active Directory dans le cadre de l’élaboration d’une infrastructure de Test.
 
-Cet article montre comment créer un environnement Active Directory dans le cadre de l'élaboration d'une infrastructure de Test.
-
-Pour le deploiement du Role «**AD-Domain-Services**» nous utiliserons **Powershell** ou **Powershell DSC** ce qui vous permettra d'avoir une certaine consistance sur la configuration du rôle contrairement a l'opération via l'interface Graphique.
+Pour le déploiement du Rôle «**AD-Domain-Services**» nous utiliserons **Powershell** ou **Powershell DSC** ce qui vous permettra d’avoir une certaine consistance sur la configuration du rôle contrairement à l’opération via l’interface graphique.
 
 <!--more-->
 
 ## Configuration de l'environnement
 
-Avant de pouvoir effectuer la configuration du Rôle, je vous invite à effectuer quelques configurations système à l'aide de Powershell
+Avant de pouvoir effectuer la configuration du Rôle, je vous invite à effectuer quelques configurations système à l’aide de Powershell
 
 ```powershell
 # Set Network configuration
@@ -62,7 +61,7 @@ $Params = @{
 Install-ADDSForest @Params
 ```
 
-Une fois que le serveur a effectué l'installation de l'Active Directory, vous pouvez effectuer les opérations ci-dessous, qui permettront d'activer la Cobeille AD et de forcer la génération d'une clef Kerberos.
+Une fois que le serveur a effectué l’installation de l’Active Directory, vous pouvez effectuer les opérations ci-dessous, qui permettront d’activer la Corbeille AD et de forcer la génération d’une clef Kerberos.
 
 ```powershell
 # Enable AD Recycle bin
@@ -82,11 +81,11 @@ If (-not (Get-KDSRootKey)) {
 
 ### Powershell DSC
 
-A l'aide de [Powershell DSC](/powershell/desired-state-configuration/introduction) nous allons effectuer la configuration de votre contrôleur de domaine. La configuration que je vous partage peu être exécutées directement sur le serveur ou bien via un [Serveur Pull]().
+A l'aide de [Powershell DSC](/powershell/desired-state-configuration/introduction) nous allons effectuer la configuration de votre contrôleur de domaine. La configuration que je vous partage peut être exécutée directement sur le serveur ou bien via un Serveur Pull.
 
 #### Prérequis
 
-Avant de pouvoir effectuer l'exécution de cette configuration, vous allez devoir effectuer l'installation de quelques modules Powershell DSC a l'aide des commandes ci-dessous.
+Avant de pouvoir effectuer l’exécution de cette configuration, vous allez devoir effectuer l’installation de quelques modules Powershell DSC à l’aide de la commande ci-dessous:
 
 ```powershell
 Install-PackageProvider -Name NuGet -Force
@@ -97,7 +96,7 @@ Install-Module xPSDesiredStateConfiguration, xActiveDirectory, xDNSServer -force
 
 #### Configuration
 
-La configuration ci-dessous vous permettra d'effectuer automatiquement les tâches suivantes :
+La configuration ci-dessous vous permettra d’effectuer automatiquement les tâches suivantes :
 
 - **Installation** de fonctionnalités : Windows-Server-Backup, DNS, AD-Domain-Services
 - **Installation** des outils d'administrations : RSAT-AD-PowerShell, RSAT-AD-Tools, RSAT-DNS-Server
@@ -105,7 +104,7 @@ La configuration ci-dessous vous permettra d'effectuer automatiquement les tâch
 - **Activation** de la Corbeille AD
 - Forcer la **génération** de la clef Root de **Kerberos**
 
-Vous noterez que dans cette configuration on utilise le mode «**ApplyOnly**» ce qui permet d'éviter de rejouer la configuration toutes les 15 minutes.
+Vous noterez que dans la configuration on utilise le mode «**ApplyOnly**» ce qui permet d’éviter de rejouer la configuration toutes les 15 minutes.
 
 ```powershell
 Configuration SetupActiveDirectory
@@ -285,11 +284,9 @@ Start-DscConfiguration -Wait -Force -Path .\SetupActiveDirectory -Verbose
 
 <div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/SypPOgRgr38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
+Dans le cadre d’une infrastructure de Production, je vous recommande de **crypter** les informations de connexion a l’aide de certificat (https://docs.microsoft.com/en-us/powershell/dsc/securemof)
 
-Dans le cadre d'une infrastructure de Production, je vous recommande de **crypter** les informations de connexion a l'aide de certificat (https://docs.microsoft.com/en-us/powershell/dsc/securemof).
-
-
-## Source
+## Sources
 
 - [Configuring the Local Configuration Manager](https://docs.microsoft.com/en-us/powershell/dsc/metaconfig)
 - [Create the Key Distribution Services KDS Root Key](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/create-the-key-distribution-services-kds-root-key)
