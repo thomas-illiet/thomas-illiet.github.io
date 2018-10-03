@@ -34,7 +34,7 @@ defaults:
       comments: true
 
 # Serving
-url: "https://thomas-illiet.github.io/"
+url: "https://www.thomas-illiet.fr"
 baseurl: ""
 
 # Includes
