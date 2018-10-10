@@ -12,6 +12,8 @@ categories:
 
 J'aurai le plaisir de co-animer une session sur **Powershell DSC** lors du prochain [Modern Workplace](https://modern-workplace.pro) avec [Guillaume Mathieu](https://www.linkedin.com/in/guillaume-mathieu-785431119).
 
+![modern-workplace-conference-paris-2018](/assets/img/2018/conference/modern-workplace-conference-paris-2018.jpeg)
+
 Notre Objectif de cette présentation sera :
 
 - Exposer les principes et objectifs de PowerShell Desired State Configuration (DSC)
