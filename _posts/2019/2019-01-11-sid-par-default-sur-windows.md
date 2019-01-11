@@ -14,6 +14,8 @@ Au lieu d’utiliser des noms, le système d’exploitation Windows utilise des 
 
 Ce sont des identifiants **uniques** et **immuables** de sécurité alphanumériques assignés par un contrôleur de domaine qui identifient chaque système, utilisateur ou objet (groupe) dans un réseau ou sur une machine. Certains SID sont identiques sur tous les systèmes.
 
+<!--more-->
+
 La liste ci-dessous vous sera très pratique quand il vous manque les droits d’un utilisateur standard / par défaut, ou bien pour la création de scripts powershell.
 
 ## SID des comptes utilisateurs
