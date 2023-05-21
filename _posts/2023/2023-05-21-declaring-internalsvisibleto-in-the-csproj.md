@@ -10,6 +10,7 @@ categories:
 ---
 
 While I prefer testing the public API of an assembly, it's sometimes useful to test the implementation details.
+
 Starting with .NET 5, you can use the <InternalsVisibleTo> without adding any NuGet package:
   
 ```csharp
