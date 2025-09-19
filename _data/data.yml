@@ -73,39 +73,64 @@ career-profile:
 experiences:
   title: Experiences
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+  - role: Consultant DevOps
+    time: nov. 2024 - aujourd'hui
+    company: BNP Paribas CIB
+    details: 
+      Au sein de l’équipe infrastructure, ma mission consistait à identifier et à mettre en œuvre des solutions visant à optimiser le fonctionnement du service informatique.
+
+  - role: Consultant SysAdmin/DevOps
+    time: juin. 2017 - aujourd'hui
+    company: Metsys
+    details: 
+      En tant que Consultant Cloud et Infrastructure, j'ai joué un rôle clé dans la sécurisation des infrastructures pour divers clients. Mon expertise m'a permis de mener à bien des projets complexes, tout en partageant mes connaissances avec les équipes internes.
+    
+  - role: Consultant DevOps
+    time: mars. 2024 - nov. 2024
+    company: BNP Paribas
+    details: 
+      Chargé de l'implémentation d'une stack DevOps dans le cadre de la fusion des équipes d'automatisation,
+      avec pour objectif de concevoir un système générique destiné à réduire les délais de mise en production et à améliorer la fiabilité de l'infrastructure.
+
+  - role: Consultant en automatisation d'infrastructure Microsoft
+    time: oct. 2019 - mars 2024
+    company: BNP Paribas CIB
+    details: 
+
+  - role: Consultant SysAdmin/DevOps
+    time: jan. 2019 - sept. 2019
+    company: Louis Vuitton
+    details: 
+  
+  - role: Consultant Cloud et Infrastructure 
+    time: déc. 2018
+    company: LVMH
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
+      Durant cette courte période, j'ai réalisé un audit de la configuration GPO des serveurs Active Directory.
+      L'objectif est de pouvoir migrer plusieurs serveurs Active Directory vers un point unique, afin d'améliorer la maintenance et la fiabilité de la production.
+
+  - role: Consultant SysAdmin/DevOps
+    time: avr. 2018 - déc. 2018
+    company: Societe Generale
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      Au sein de l'équipe dédiée aux futures images systèmes de la Société Générale,
+      j'ai rejoint pour apporter mon expertise en développement PowerShell et créer une image Windows serveur complète et prête à l'emploi. 
+
+  - role: Consultant Cloud et Infrastructure 
+    time: déc. 2017 - mars 2018
+    company: BNP Paribas
+    details: |
+      En tant que membre de l'équipe PKI de BNP Paribas,
+      j'ai apporté un soutien précieux dans la réalisation des projets d'études.
+      De plus, j'ai joué un rôle clé dans la création de diverses maquettes visant à améliorer les outils internes de l'entreprise.
 
   - role: Autres missions
     time: 2013 - 2017
     company: 
     details: |
-      - Administrateur systèmes & réseaux – ISI Expert, Vitalliance
+      - Consultant Cloud et Infrastructure - John Paul
       - Migration Office 365 – Alstom
+      - Administrateur systèmes & réseaux – ISI Expert, Vitalliance
       - Support IT – Mondelez, Digitick, Ophtalmic Compagnie
 
 certifications:
