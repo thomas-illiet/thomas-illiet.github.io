@@ -3,13 +3,13 @@
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  position: left # position of the sidebar : left or right
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
   name: Thomas ILLIET
-  tagline: Full Stack Developer
+  tagline: Consultant DevOps – SRE
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -43,29 +43,32 @@ sidebar:
       level: Professional
 
   interests:
-    title: Interests
+    title: Intérêts
     info:
-    - item: Climbing
+    - item: Escalade
       link:
-
-
-    - item: Snowboarding
+    - item: Bricolage & conception manuelle
       link:
-
-
-    - item: Cooking
+    - item: Nouvelles technologies & innovation
       link:
-
 
 career-profile:
-  title: Career Profile
+  title: Résumé
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    <p>
+      <strong>Consultant DevOps</strong> avec <strong>10+ ans d’expérience</strong> en 
+      <em>Cloud</em>, <em>CI/CD</em> et <em>automatisation</em>.  
+      J’ai accompagné de grands comptes 
+      (<strong>BNP Paribas</strong>, <strong>Société Générale</strong>, 
+      <strong>Louis Vuitton</strong>, <strong>LVMH</strong>) 
+      dans la <strong>modernisation</strong>, la <strong>sécurisation</strong> et 
+      l’<strong>industrialisation</strong> de leurs environnements IT.  
+    </p>
+    <p>
+      <strong>Pédagogue</strong>, je forme les équipes, accompagne leur 
+      <em>montée en compétences</em> et pilote des projets complexes en 
+      <strong>contexte international</strong>.
+    </p>
 education:
   title: Education
   info:
@@ -121,17 +124,14 @@ experiences:
       pellentesque eu, pretium quis, sem.
         - Bullet point
         - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
+
+  - role: Autres missions
+    time: 2013 - 2017
+    company: 
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      - Administrateur systèmes & réseaux – ISI Expert, Vitalliance
+      - Migration Office 365 – Alstom
+      - Support IT – Mondelez, Digitick, Ophtalmic Compagnie
 
 certifications:
   title: Certifications
