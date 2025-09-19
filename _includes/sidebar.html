@@ -1,43 +1,33 @@
-<aside class="user-profile {% if site.fixed_sidebar == 1 %}fixed{% endif %}" role="complementary">
-    <div class="burger">
-        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
-        <label for="toggleBurger">
-            <span>Navigation</span>
-        </label>
-    </div>
+{% assign sidebar = site.data.data.sidebar %}
+<div class="sidebar-wrapper">
 
-    <div class="compact-header">
-        <a href="{{ site.baseurl | prepend: site.url }}"><img class="avatar" src="{% if site.avatar %}{{site.avatar}}{% else %}{{ site.email | to_gravatar:140 }}{% endif %}" /></a>
-        <div class="my-info">
-            <strong class="my-name">{{ site.name }}</strong>
-            <span class="my-job-title">{{ site.job_title }}</span>
-        </div>
-    </div>
+  <div class="profile-container">
 
-    {% if site.show_menu == 1 %}
-        {% if site.pages %}
-        <div class="mainmenu">
-            <a href="{{ site.baseurl | prepend: site.url }}" {% if page.url == "/" %}class="active"{% endif %}>Accueil</a>
-            {% for p in site.pages %}
-                {% if p.layout == 'page' %}
-                    <a href="{{ p.url | prepend: site.baseurl | prepend: site.url }}" {% if p.url == page.url %}class="active"{% endif %}>{{ p.title }}</a>
-                {% endif %}
-            {% endfor %}
-        </div>
-        {% endif %}
+    {% if sidebar.avatar %}
+    <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
     {% endif %}
 
-    <p class="about-me">{{ site.description }}</p>
+    {% if sidebar.name %}
+    <h1 class="name">{{ sidebar.name }}</h1>
+    {% endif %}
 
-    <ul class="socials">
-        {% for social in site.social_networks %}{% if social.url != '' %}<li><a href="{{social.url}}"><svg title="{{social.name}}" width="16" height="16" {% if social.name == 'applemusic' %} style="margin: 0 0 0 -2px" {% endif %}><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#{{social.name}}-icon"></use></svg></a></li>{% endif %}{% endfor %}
+    {% if sidebar.tagline %}
+    <h3 class="tagline">{{ sidebar.tagline }}</h3>
+    {% endif %}
 
-        {% if site.email != blank and site.show_email == 1 %}
-            <li><a href="mailto:{{site.email}}"><svg title="{{social.name}}" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#email-icon"></use></svg></a></li>
-        {% endif %}
+  </div><!--//profile-container-->
 
-        {% if site.show_rss == 1 %}
-         <li><a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"><svg title="{{social.name}}" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl | prepend: site.url }}/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
-        {% endif %}
-    </ul>
-</aside>
+  {% include contact.html %}
+
+  {% if sidebar.education %}
+    {% include education.html %}
+  {% endif %}
+
+  {% include language.html %}
+  {% include interests.html %}
+
+  {% if sidebar.about %}
+    {% include about.html %}
+  {% endif %}
+
+</div><!--//sidebar-wrapper-->

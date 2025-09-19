@@ -1,19 +1,5 @@
-# Jekyll
+# Cache
 _site/
-.jekyll-cache
+.sass-cache/
 .jekyll-metadata
-.sass-cache
-
-# Files
-.analysis
-.DS_Store
-*.swp
-*~
-
-# Ruby
-.bundle/
-.byebug_history
-.ruby-gemset
-.ruby-version
-*.gem
-Gemfile.lock
+.jekyll-cache

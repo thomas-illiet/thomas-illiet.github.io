@@ -1,40 +1,35 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
 
-    <title>{% if page.title %}{{ page.title | escape }} |{% endif %} {{ site.name | escape }} {% if site.job_title %}&mdash; {{site.job_title | escape }} {% endif %}</title>
-    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} |{% endif %} {{ site.name | escape }} {% if site.job_title %}&mdash; {{site.job_title | escape }} {% endif %}" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} |{% endif %} {{ site.name | escape }} {% if site.job_title %}&mdash; {{site.job_title | escape }} {% endif %}" />
+  <!-- Meta -->
+  <meta charset="utf-8">
+  {% if site.chrome_mobile_color %}
+  <meta name="theme-color" content="{{ site.chrome_mobile_color }}">
+  {% endif%}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description |default: "A beautiful
+  Jekyll theme for creating resume" }}">
 
-    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="description" property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    {% if site.twitter_handler %}
-    <meta name="twitter:site" content="@{{site.twitter_handler}}" />
-    {% endif %}
-    <meta property="og:url" content="{{page.url | prepend: site.baseurl | prepend: site.url}}" />
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/bootstrap/css/bootstrap.css">
 
-    <meta property="og:image" content="" />
-    <meta name="twitter:image" content="" />
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/font-awesome/css/all.css">
 
-    <meta name="author" content="{{site.name}}" />
+  <!-- html2pdf library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <meta name="copyright" content="Copyright by {{site.name}}. All Rights Reserved." />
-
-    {% include fonts.html %}
-    {% if {{site.favicon != blank}} %}
-    <link href="{{ site.favicon }}" rel="shortcut icon" type="image/x-icon" />
-    {% endif %}
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl | prepend: site.url}}">
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab:300|Roboto:500" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>

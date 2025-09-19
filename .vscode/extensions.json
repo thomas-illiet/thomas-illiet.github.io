@@ -1,8 +1,0 @@
-{
-    "recommendations": [
-      "ginfuru.ginfuru-vscode-jekyll-syntax",
-      "DavidAnson.vscode-markdownlint",
-      "coenraads.bracket-pair-colorizer",
-      "editorconfig.editorconfig"
-    ]
-}

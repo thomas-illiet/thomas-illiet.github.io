@@ -1,17 +1,34 @@
+---
+#Add "layout: compress" here to compress the html code
+---
 <!DOCTYPE html>
-<html>
-    {% include head.html %}
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+{% include head.html %}
 
-    <body>
-        <div class="wrapper clear">
-            {% include sidebar.html %}
+<body>
+  <button onclick="print()" class="print-button d-print-none">
+    <i class="fas fa-file-pdf"></i>Print
+  </button>
 
-            <main class="the-content" role="main">
-                {% include search.html %}
-                {{ content }}
-            </main>
-        </div>
+  <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
+    <i class="fas fa-file-pdf"></i>PDF
+  </button>
 
-        {% include scripts.html %}
-    </body>
+  <div class="wrapper">
+    {% include sidebar.html %}
+
+    <div class="main-wrapper">
+      {{ content }}
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+  {% include scripts.html %}
+  <script src="{{ site.baseurl }}/assets/js/pdf-generator.js"></script>
+</body>
+
 </html>
