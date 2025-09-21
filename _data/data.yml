@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Thomas ILLIET
-  tagline: Consultant DevOps – SRE
+  tagline: Consultant SRE
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -17,15 +17,15 @@ sidebar:
   phone: 06 37 26 98 55
   timezone: Europe/Paris # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
-  website: https://www.thomas-illiet.fr # Include the full website URL, including "http://" or "https://".
+  website: https://thomas-illiet.fr # Include the full website URL, including "http://" or "https://".
   linkedin: thomas-illiet
   xing: 
   github: thomas-illiet
   telegram: # add your nickname without '@' sign
-  gitlab: thomas-illiet
+  gitlab: 
   bitbucket:
   bluesky:  # Specify your full Bluesky handle
-  twitter: '@thomas_illiet'
+  twitter: 
   stack-overflow: # Number/Username, e.g. 123456/alandoe
   codewars:
   goodreads: # Number-Username, e.g. 123456-alandoe
@@ -102,7 +102,12 @@ experiences:
   - role: Consultant en automatisation d'infrastructure Microsoft
     time: oct. 2019 - mars 2024
     company: BNP Paribas CIB
-    details: 
+    details: |
+      - Recherche et development pour amélioration de l'infrastructure 
+      - Maintien en condition opérationnelle des outils/serveurs de l'équipe
+      - Creation d'un moteur de synchronization de donnée Active Directory/Azure
+      - Migration de l'infrastructure monolithique vers une infrastructure orientée microservices
+      - Mise en place d'un cluster Keycloak avec interconnection sur le SSO de l'entreprise
 
   - role: Consultant SysAdmin/DevOps
     time: jan. 2019 - sept. 2019
@@ -112,7 +117,7 @@ experiences:
   
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2018
-    company: LVMH
+    company: Moët & Chandon
     details: |
       - Audit des configurations GPO des serveurs Active Directory.
       - Détection des incohérences en vue de la migration vers un point unique.
@@ -146,7 +151,6 @@ experiences:
 
   - role: Autres missions
     time: 2013 - 2017
-    company: 
     details: |
       - Consultant Cloud et Infrastructure – John Paul
       - Migration Office 365 – Alstom
