@@ -8,9 +8,9 @@ url: 'https://www.thomas-illiet.fr'
 # disabling since we are using a custom domain
 #baseurl: '/online-cv' 
 
-description: A beautiful Jekyll theme for creating resume
+description: Mon curriculum vitæ, mon histoire, mes étapes, mon avenir.
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: blue # blue turquoise green berry orange ceramic teal oceanstale
+theme_skin: green # blue turquoise green berry orange ceramic teal oceanstale
 chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
 # Tracker
