@@ -114,30 +114,35 @@ experiences:
     time: déc. 2018
     company: LVMH
     details: |
-      <p>
-        Réalisation d’un <strong>audit de la configuration GPO</strong> des serveurs <strong>Active Directory</strong> durant cette mission courte. 
-        L’objectif était de <strong>préparer la migration</strong> de plusieurs serveurs vers un point unique afin d’<strong>optimiser la maintenance</strong> et <strong>assurer la fiabilité</strong> de la production.
-      </p>
+      - Audit des configurations GPO des serveurs Active Directory.
+      - Détection des incohérences en vue de la migration vers un point unique.
+      - Optimisation de la maintenance et fiabilisation de la production.
+
   - role: Consultant SysAdmin/DevOps
     time: avr. 2018 - déc. 2018
     company: Societe Generale
     details: |
-      <p>
-        Intégration au sein de l’équipe dédiée aux <strong>futures images systèmes</strong>,
-        j'ai apporté mon <strong>expertise en développement PowerShell</strong> pour créer une <strong>image Windows Server complète</strong> et <strong>prête à l’emploi</strong>.
-      </p>
+      - Participation à la conception des nouvelles images systèmes.
+      - Développement PowerShell pour automatiser les tâches.
+      - Création d’une image Windows Server prête à l’usage.
+
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2017 - mars 2018
     company: BNP Paribas
     details: |
-      <p>
-        <strong>Membre de l’équipe PKI</strong> chez BNP Paribas, apportant un <strong>soutien stratégique</strong> dans la réalisation des projets d’études. 
-        J’ai également joué un <strong>rôle clé</strong> dans la création de <strong>maquettes</strong> visant à <strong>améliorer les outils internes</strong> et optimiser les processus.
-      </p>
+      - Participation aux projets d’études de l’équipe PKI.
+      - Création de maquettes pour tester et valider de nouvelles solutions.
+      - Amélioration des outils internes et simplification des processus.
+      - Apport de support technique et fonctionnel aux équipes projets.
 
   - role: Consultant SysAdmin/DevOps
     time: juin. 2017 - aujourd'hui
     company: Metsys
+    details: |
+      - Accompagnement de clients grands comptes et PME dans leurs projets IT.
+      - Missions full-time chez les clients sur des environnements Linux / Windows / Cloud.
+      - Mise en place et automatisation d’infrastructures (CI/CD, monitoring, sécurisation).
+      - Conseil, support et transfert de compétences auprès des équipes internes.
 
   - role: Autres missions
     time: 2013 - 2017
