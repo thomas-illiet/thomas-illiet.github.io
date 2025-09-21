@@ -35,14 +35,14 @@ sidebar:
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
-    title: Languages
+    title: Langues
     info:
     - idiom: Français
       level: Langue maternelle
     - idiom: Anglais
       level: Professionnel
   interests:
-    title: Intérêts
+    title: Centre d'Intérêts
     info:
     - item: Escalade
       link:
@@ -71,27 +71,34 @@ career-profile:
 
 
 experiences:
-  title: Experiences
+  title: Experiences Professionnelles
   info:
   - role: Consultant DevOps
     time: nov. 2024 - aujourd'hui
     company: BNP Paribas CIB
-    details: 
-      Au sein de l’équipe infrastructure, ma mission consistait à identifier et à mettre en œuvre des solutions visant à optimiser le fonctionnement du service informatique.
-
-  - role: Consultant SysAdmin/DevOps
-    time: juin. 2017 - aujourd'hui
-    company: Metsys
-    details: 
-      En tant que Consultant Cloud et Infrastructure, j'ai joué un rôle clé dans la sécurisation des infrastructures pour divers clients. Mon expertise m'a permis de mener à bien des projets complexes, tout en partageant mes connaissances avec les équipes internes.
-    
+    details: |
+      <p>
+        Contribution à l’<strong>optimisation</strong> et à la <strong>fiabilisation</strong> du service informatique
+        par la mise en place de solutions adaptées.
+      </p>
+      <ul>
+        <li>Analyse et amélioration des performances</li>
+        <li>Mise en œuvre de solutions d’optimisation</li>
+        <li>Soutien à la continuité de service</li>
+      </ul>
   - role: Consultant DevOps
     time: mars. 2024 - nov. 2024
     company: BNP Paribas
-    details: 
-      Chargé de l'implémentation d'une stack DevOps dans le cadre de la fusion des équipes d'automatisation,
-      avec pour objectif de concevoir un système générique destiné à réduire les délais de mise en production et à améliorer la fiabilité de l'infrastructure.
-
+    details: |
+      <p>
+        Conception et <strong>déploiement d'une stack DevOps générique</strong> dans le cadre de la fusion des équipes d'automatisation,
+        visant à <strong>réduire les délais de mise en production</strong> et <strong>améliorer la fiabilité</strong> de l'infrastructure.
+      </p>
+      <ul>
+        <li>Architecture CI/CD : pipelines modulaires et réutilisables.</li>
+        <li>Automatisation des déploiements et des tests d'intégration.</li>
+        <li>Résultat : réduction des lead times et hausse de la disponibilité.</li>
+      </ul>
   - role: Consultant en automatisation d'infrastructure Microsoft
     time: oct. 2019 - mars 2024
     company: BNP Paribas CIB
@@ -100,43 +107,51 @@ experiences:
   - role: Consultant SysAdmin/DevOps
     time: jan. 2019 - sept. 2019
     company: Louis Vuitton
-    details: 
+    details: |
+      Au sein de l'équipe de gestion des caisses, nous devions gerer l'exploitation, la maintenance
   
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2018
     company: LVMH
     details: |
-      Durant cette courte période, j'ai réalisé un audit de la configuration GPO des serveurs Active Directory.
-      L'objectif est de pouvoir migrer plusieurs serveurs Active Directory vers un point unique, afin d'améliorer la maintenance et la fiabilité de la production.
-
+      <p>
+        Réalisation d’un <strong>audit de la configuration GPO</strong> des serveurs <strong>Active Directory</strong> durant cette mission courte. 
+        L’objectif était de <strong>préparer la migration</strong> de plusieurs serveurs vers un point unique afin d’<strong>optimiser la maintenance</strong> et <strong>assurer la fiabilité</strong> de la production.
+      </p>
   - role: Consultant SysAdmin/DevOps
     time: avr. 2018 - déc. 2018
     company: Societe Generale
     details: |
-      Au sein de l'équipe dédiée aux futures images systèmes de la Société Générale,
-      j'ai rejoint pour apporter mon expertise en développement PowerShell et créer une image Windows serveur complète et prête à l'emploi. 
-
+      <p>
+        Intégration au sein de l’équipe dédiée aux <strong>futures images systèmes</strong>,
+        j'ai apporté mon <strong>expertise en développement PowerShell</strong> pour créer une <strong>image Windows Server complète</strong> et <strong>prête à l’emploi</strong>.
+      </p>
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2017 - mars 2018
     company: BNP Paribas
     details: |
-      En tant que membre de l'équipe PKI de BNP Paribas,
-      j'ai apporté un soutien précieux dans la réalisation des projets d'études.
-      De plus, j'ai joué un rôle clé dans la création de diverses maquettes visant à améliorer les outils internes de l'entreprise.
+      <p>
+        <strong>Membre de l’équipe PKI</strong> chez BNP Paribas, apportant un <strong>soutien stratégique</strong> dans la réalisation des projets d’études. 
+        J’ai également joué un <strong>rôle clé</strong> dans la création de <strong>maquettes</strong> visant à <strong>améliorer les outils internes</strong> et optimiser les processus.
+      </p>
+
+  - role: Consultant SysAdmin/DevOps
+    time: juin. 2017 - aujourd'hui
+    company: Metsys
 
   - role: Autres missions
     time: 2013 - 2017
     company: 
     details: |
-      - Consultant Cloud et Infrastructure - John Paul
+      - Consultant Cloud et Infrastructure – John Paul
       - Migration Office 365 – Alstom
       - Administrateur systèmes & réseaux – ISI Expert, Vitalliance
       - Support IT – Mondelez, Digitick, Ophtalmic Compagnie
 
 certifications:
-  title: Licences et certifications
+  title: Certifications
   list:
-  - name: Developing Microsoft Azure Solutions
+  - name: Développement des solutions Microsoft Azure
     start: mai 2017
     organization: Microsoft
     credentialid: 70-532
@@ -144,17 +159,11 @@ certifications:
     start: avril 2017
     organization: Microsoft
     credentialid: 70-410
-  - name: Implementing Microsoft Azure Infrastructure Solutions 
+  - name: Implémentation des solutions d'infrastructure Microsoft Azure
     start: avril 2017
     organization: Microsoft
     credentialid: 70-533
-  - name: Architecting Microsoft Azure Solutions 
+  - name: Architecture de solutions Azure
     start: avril 2017
     organization: Microsoft
     credentialid: 70-534
-
-
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-
