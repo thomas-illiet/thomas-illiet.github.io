@@ -69,7 +69,16 @@ career-profile:
       <strong>contexte international</strong>.
     </p>
 
-
+skill:
+  - name: "Cloud & Virtualisation"
+    items:
+  - name: "Automatisation & CI/CD"
+    items: ["PowerShell", "Ansible", "Terraform", "Gitlab"]
+  - name: "Sécurité & SSO"
+    items: ["Keycloak", "SSO d’entreprise", "bonnes pratiques sécurisées"]
+  - name: "Méthodologies"
+    items: ["Agile", "DevOps", "transfert de compétences", "gestion de projets"]
+  
 experiences:
   title: Experiences Professionnelles
   info:
@@ -77,33 +86,25 @@ experiences:
     time: nov. 2024 - aujourd'hui
     company: BNP Paribas CIB
     details: |
-      <p>
-        Contribution à l’<strong>optimisation</strong> et à la <strong>fiabilisation</strong> du service informatique
-        par la mise en place de solutions adaptées.
-      </p>
-      <ul>
-        <li>Analyse et amélioration des performances</li>
-        <li>Mise en œuvre de solutions d’optimisation</li>
-        <li>Soutien à la continuité de service</li>
-      </ul>
+      - Accompagnement des équipes IT dans la transformation DevOps
+      - Development d'un logiciel interne pour la collecte des inventaires
+      - Recherche et implémentation de solutions innovantes pour améliorer l'efficacité opérationnelle
+      - Formation et transfert de compétences aux équipes internes
+      - Collaboration avec les équipes projets pour l'integration de nouvelles technologies
+
   - role: Consultant DevOps
     time: mars. 2024 - nov. 2024
     company: BNP Paribas
     details: |
-      <p>
-        Conception et <strong>déploiement d'une stack DevOps générique</strong> dans le cadre de la fusion des équipes d'automatisation,
-        visant à <strong>réduire les délais de mise en production</strong> et <strong>améliorer la fiabilité</strong> de l'infrastructure.
-      </p>
-      <ul>
-        <li>Architecture CI/CD : pipelines modulaires et réutilisables.</li>
-        <li>Automatisation des déploiements et des tests d'intégration.</li>
-        <li>Résultat : réduction des lead times et hausse de la disponibilité.</li>
-      </ul>
+      - Développement d’une architecture CI/CD avec des pipelines modulaires et réutilisables
+      - Automatisation des déploiements et des tests d’intégration
+      - Optimisation des processus, réduisant les délais de mise en production des services
+      - Mise en place du monitoring pour les services critiques
   - role: Consultant en automatisation d'infrastructure Microsoft
     time: oct. 2019 - mars 2024
     company: BNP Paribas CIB
     details: |
-      - Recherche et development pour amélioration de l'infrastructure 
+      - Recherche et development pour l'amélioration de l'infrastructure 
       - Maintien en condition opérationnelle des outils/serveurs de l'équipe
       - Creation d'un moteur de synchronization de donnée Active Directory/Azure
       - Migration de l'infrastructure monolithique vers une infrastructure orientée microservices
@@ -113,7 +114,10 @@ experiences:
     time: jan. 2019 - sept. 2019
     company: Louis Vuitton
     details: |
-      Au sein de l'équipe de gestion des caisses, nous devions gerer l'exploitation, la maintenance
+      - Administration et maintenance des caisses en magasin (Windows).
+      - Automatisation des tâches récurrentes via des scripts PowerShell.
+      - Collaboration avec les équipes de développement pour améliorer les processus de déploiement.
+      - Participation à la mise en place de solutions d'automatisation et de gestion de configuration.'
   
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2018
@@ -121,21 +125,23 @@ experiences:
     details: |
       - Audit des configurations GPO des serveurs Active Directory.
       - Détection des incohérences en vue de la migration vers un point unique.
-      - Optimisation de la maintenance et fiabilisation de la production.
+      - Rédaction d’un rapport d’audit avec des recommandations pour améliorer la sécurité et la gestion des serveurs.
+      - Présentation des résultats aux équipes IT.
 
   - role: Consultant SysAdmin/DevOps
     time: avr. 2018 - déc. 2018
     company: Societe Generale
     details: |
-      - Participation à la conception des nouvelles images systèmes.
-      - Développement PowerShell pour automatiser les tâches.
+      - Participation à la conception des nouvelles images systèmes (Windowds).
+      - Collaboration avec les équipes de sécurité pour assurer la conformité des images.
+      - Développement PowerShell pour automatiser les tâches de maintenance.
       - Création d’une image Windows Server prête à l’usage.
 
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2017 - mars 2018
     company: BNP Paribas
     details: |
-      - Participation aux projets d’études de l’équipe PKI.
+      - Participation aux projets d’études concernant le futur de l'infrastructure PKI
       - Création de maquettes pour tester et valider de nouvelles solutions.
       - Amélioration des outils internes et simplification des processus.
       - Apport de support technique et fonctionnel aux équipes projets.
