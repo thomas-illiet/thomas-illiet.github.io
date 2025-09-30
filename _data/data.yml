@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Thomas ILLIET
-  tagline: Consultant SRE
+  tagline: Consultant SRE & DevOps
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -82,7 +82,7 @@ skill:
 experiences:
   title: Experiences Professionnelles
   info:
-  - role: Consultant DevOps
+  - role: Consultant SRE
     time: nov. 2024 - aujourd'hui
     company: BNP Paribas CIB
     details: |
@@ -90,7 +90,7 @@ experiences:
       - Development d'un logiciel interne pour la collecte des inventaires
       - Recherche et implémentation de solutions innovantes pour améliorer l'efficacité opérationnelle
       - Formation et transfert de compétences aux équipes internes
-      - Collaboration avec les équipes projets pour l'integration de nouvelles technologies
+      - Collaboration avec les équipes projets pour l'intégration de nouvelles technologies
 
   - role: Consultant DevOps
     time: mars. 2024 - nov. 2024
@@ -104,9 +104,9 @@ experiences:
     time: oct. 2019 - mars 2024
     company: BNP Paribas CIB
     details: |
-      - Recherche et development pour l'amélioration de l'infrastructure 
+      - Recherche et développement pour l'amélioration de l'infrastructure 
       - Maintien en condition opérationnelle des outils/serveurs de l'équipe
-      - Creation d'un moteur de synchronization de donnée Active Directory/Azure
+      - Création d'un moteur de synchronisation de donnée Active Directory/Azure
       - Migration de l'infrastructure monolithique vers une infrastructure orientée microservices
       - Mise en place d'un cluster Keycloak avec interconnection sur le SSO de l'entreprise
 
@@ -117,7 +117,7 @@ experiences:
       - Administration et maintenance des caisses en magasin (Windows).
       - Automatisation des tâches récurrentes via des scripts PowerShell.
       - Collaboration avec les équipes de développement pour améliorer les processus de déploiement.
-      - Participation à la mise en place de solutions d'automatisation et de gestion de configuration.'
+      - Participation à la mise en place de solutions d'automatisation et de gestion de configuration.
   
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2018
@@ -132,7 +132,7 @@ experiences:
     time: avr. 2018 - déc. 2018
     company: Societe Generale
     details: |
-      - Participation à la conception des nouvelles images systèmes (Windowds).
+      - Participation à la conception des nouvelles images systèmes (Windows).
       - Collaboration avec les équipes de sécurité pour assurer la conformité des images.
       - Développement PowerShell pour automatiser les tâches de maintenance.
       - Création d’une image Windows Server prête à l’usage.
