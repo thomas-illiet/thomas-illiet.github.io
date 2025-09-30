@@ -115,46 +115,46 @@ experiences:
     time: jan. 2019 - sept. 2019
     company: Louis Vuitton
     details: |
-      - Administration et maintenance des caisses en magasin (Windows).
-      - Automatisation des tâches récurrentes via des scripts PowerShell.
-      - Participation à la mise en place d'automatisation de gestion de configuration.
+      - Administration et maintenance des caisses en magasin (Windows)
+      - Automatisation des tâches récurrentes via des scripts PowerShell
+      - Participation à la mise en place d'automatisation de gestion de configuration
   
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2018
     company: Moët & Chandon
     details: |
-      - Audit des configurations GPO des serveurs Active Directory.
-      - Détection des incohérences en vue de la migration vers un point unique.
-      - Rédaction d’un rapport d’audit avec des recommandations pour améliorer la sécurité et la gestion des serveurs.
-      - Présentation des résultats aux équipes IT.
+      - Audit des configurations GPO des serveurs Active Directory
+      - Détection des incohérences en vue de la migration vers un point unique
+      - Rédaction d’un rapport d’audit avec des recommandations pour améliorer la sécurité et la gestion des serveurs
+      - Présentation des résultats aux équipes IT
 
   - role: Consultant SysAdmin/DevOps
     time: avr. 2018 - déc. 2018
     company: Societe Generale
     details: |
-      - Participation à la conception des nouvelles images systèmes (Windows).
-      - Collaboration avec les équipes de sécurité pour assurer la conformité des images.
-      - Développement PowerShell pour automatiser les tâches de maintenance.
-      - Création d’une image Windows Server prête à l’usage.
+      - Participation à la conception des nouvelles images systèmes (Windows)
+      - Collaboration avec les équipes de sécurité pour assurer la conformité des images
+      - Développement PowerShell pour automatiser les tâches de maintenance
+      - Création d’une image Windows Server prête à l’usage
 
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2017 - mars 2018
     company: BNP Paribas
     details: |
       - Participation aux projets d’études concernant le futur de l'infrastructure PKI
-      - Création de maquettes pour tester et valider de nouvelles solutions.
-      - Amélioration des outils internes et simplification des processus.
-      - Apport de support technique et fonctionnel aux équipes projets.
+      - Création de maquettes pour tester et valider de nouvelles solutions
+      - Amélioration des outils internes et simplification des processus
+      - Apport de support technique et fonctionnel aux équipes projets
   
 
   - role: Consultant SysAdmin/DevOps
     time: juin. 2017 - aujourd'hui
     company: Metsys
     details: |
-      - Accompagnement de clients grands comptes et PME dans leurs projets IT.
-      - Missions full-time chez les clients sur des environnements Linux / Windows / Cloud.
-      - Mise en place et automatisation d’infrastructures (CI/CD, monitoring, sécurisation).
-      - Conseil, support et transfert de compétences auprès des équipes internes.
+      - Accompagnement de clients grands comptes et PME dans leurs projets IT
+      - Missions full-time chez les clients sur des environnements Linux / Windows / Cloud
+      - Mise en place et automatisation d’infrastructures (CI/CD, monitoring, sécurisation)
+      - Conseil, support et transfert de compétences auprès des équipes internes
 
   - role: Autres missions
     time: 2013 - 2017
