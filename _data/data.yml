@@ -88,9 +88,9 @@ experiences:
     details: |
       - Accompagnement des équipes IT dans la transformation DevOps
       - Development d'un logiciel interne pour la collecte des inventaires
-      - Recherche et implémentation de solutions innovantes pour améliorer l'efficacité opérationnelle
       - Formation et transfert de compétences aux équipes internes
       - Collaboration avec les équipes projets pour l'intégration de nouvelles technologies
+      - Recherche et implémentation de solutions innovantes pour améliorer l'efficacité opérationnelle
 
   - role: Consultant DevOps
     time: mars. 2024 - nov. 2024
@@ -100,6 +100,7 @@ experiences:
       - Automatisation des déploiements et des tests d’intégration
       - Optimisation des processus, réduisant les délais de mise en production des services
       - Mise en place du monitoring pour les services critiques
+
   - role: Consultant en automatisation d'infrastructure Microsoft
     time: oct. 2019 - mars 2024
     company: BNP Paribas CIB
@@ -116,8 +117,7 @@ experiences:
     details: |
       - Administration et maintenance des caisses en magasin (Windows).
       - Automatisation des tâches récurrentes via des scripts PowerShell.
-      - Collaboration avec les équipes de développement pour améliorer les processus de déploiement.
-      - Participation à la mise en place de solutions d'automatisation et de gestion de configuration.
+      - Participation à la mise en place d'automatisation de gestion de configuration.
   
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2018
@@ -145,6 +145,7 @@ experiences:
       - Création de maquettes pour tester et valider de nouvelles solutions.
       - Amélioration des outils internes et simplification des processus.
       - Apport de support technique et fonctionnel aux équipes projets.
+  
 
   - role: Consultant SysAdmin/DevOps
     time: juin. 2017 - aujourd'hui
