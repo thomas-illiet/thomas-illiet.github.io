@@ -23,6 +23,11 @@
     {% include education.html %}
   {% endif %}
 
+  {% if sidebar.tags %}
+    {% include tag.html %}
+  {% endif %}
+
+
   {% include language.html %}
   {% include interests.html %}
 

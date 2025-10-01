@@ -51,6 +51,49 @@ sidebar:
     - item: Nouvelles technologies & innovation
       link:
 
+  tags:
+    title: Technologies
+    info: 
+    - item: Golang
+      weight: 5
+    - item: DevOps
+      weight: 2
+    - item: CI/CD
+      weight: 3
+    - item: Automatisation
+      weight: 3
+    - item: Dotnet
+      weight: 4
+    - item: PowerShell
+      weight: 5
+    - item: Ansible
+      weight: 3
+    - item: Gitlab
+      weight: 4
+    - item: Helm
+      weight: 2
+    - item: Kubernetes
+      weight: 5
+    - item: Terraform
+      weight: 2
+    - item: Swagger
+      weight: 4
+    - item: Keycloak
+      weight: 3
+    - item: SSO
+      weight: 4
+    - item: Docker
+      weight: 5
+    - item: Linux
+      weight: 3
+    - item: Windows Server
+      weight: 4
+    - item: Azure
+      weight: 2
+    - item: Active Directory
+      weight: 3
+
+
 career-profile:
   title: Résumé
   summary: |
