@@ -125,16 +125,20 @@ skill:
 experiences:
   title: Expériences professionnelles
   info:
-  - role: Consultant SRE
+  - role: Consultant DevOps – IA & Innovation
     time: nov. 2024 - aujourd'hui
     company: BNP Paribas CIB
     details: |
-      - Accompagnement des équipes IT dans la transformation DevOps
-      - Development d'un logiciel interne pour la collecte des inventaires
-      - Formation et transfert de compétences aux équipes internes
-      - Collaboration avec les équipes projets pour l'intégration de nouvelles technologies
-      - Recherche et implémentation de solutions innovantes pour améliorer l'efficacité opérationnelle
-
+      - Conception et développement de POC utilisant l’intelligence artificielle pour automatiser et optimiser les activités de production et d’infrastructure
+      - Développement d’API, d’outils internes et de plateformes avec Python et Go
+      - Gestion et évolution de l’infrastructure Kubernetes utilisée par l’équipe
+      - Industrialisation des prototypes afin de les transformer en applications robustes, sécurisées et maintenables
+      - Définition de standards d’architecture, de développement, de sécurité et de déploiement
+      - Réalisation d’une plateforme centralisant les inventaires de plusieurs clusters OpenStack
+      - Veille et R&D afin d’identifier de nouveaux cas d’usage autour de l’IA et de l’automatisation
+      - Transfert de compétences et accompagnement d’équipes techniques internationales
+      - Participation aux entretiens techniques et à l’évaluation de profils DevOps et développeurs
+    
   - role: Consultant DevOps
     time: mars. 2024 - nov. 2024
     company: BNP Paribas
