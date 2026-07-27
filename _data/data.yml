@@ -42,7 +42,7 @@ sidebar:
     - idiom: Anglais
       level: Professionnel
   interests:
-    title: Centre d'Intérêts
+    title: Centres d’intérêt
     info:
     - item: Escalade
       link:
@@ -123,7 +123,7 @@ skill:
     items: ["Agile", "DevOps", "transfert de compétences", "gestion de projets"]
   
 experiences:
-  title: Experiences Professionnelles
+  title: Expériences professionnelles
   info:
   - role: Consultant SRE
     time: nov. 2024 - aujourd'hui
@@ -207,6 +207,30 @@ experiences:
       - Administrateur systèmes & réseaux – ISI Expert, Vitalliance
       - Support IT – Mondelez, Digitick, Ophtalmic Compagnie
 
+projects:
+  title: Projets IA & Innovation
+  intro: >
+    Sélection de solutions développées autour de l’intelligence artificielle,
+    de l’automatisation et des plateformes cloud-native.
+  assignments:
+    - title: Plateforme de POC IA
+      tagline: >
+        Conception d’outils permettant de tester rapidement des cas d’usage IA,
+        puis de transmettre les solutions validées aux équipes chargées de leur
+        industrialisation.
+    - title: Passerelle sécurisée pour modèles LLM
+      tagline: >
+        Développement d’une API permettant de sécuriser, administrer et superviser
+        l’accès à différents modèles d’intelligence artificielle.
+    - title: Inventaire multi-cluster OpenStack
+      tagline: >
+        Développement d’une plateforme automatisée pour collecter, normaliser
+        et centraliser les inventaires provenant de plusieurs environnements.
+    - title: Plateforme de développement Kubernetes
+      tagline: >
+        Étude et conception d’environnements de développement isolés, sécurisés
+        et déployés dynamiquement sur Kubernetes.
+        
 certifications:
   title: Certifications
   list:
