@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Thomas ILLIET
-  tagline: Consultant SRE & DevOps
+  tagline: Consultant DevOps & Tech Lead IA
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -93,23 +93,25 @@ sidebar:
     - item: Active Directory
       weight: 3
 
-
 career-profile:
-  title: Résumé
+  title: Profil
   summary: |
     <p>
-      <strong>Consultant DevOps</strong> avec <strong>10+ ans d’expérience</strong> en 
-      <em>Cloud</em>, <em>CI/CD</em> et <em>automatisation</em>.  
-      J’ai accompagné de grands comptes 
-      (<strong>BNP Paribas</strong>, <strong>Société Générale</strong>, 
-      <strong>Louis Vuitton</strong>, <strong>LVMH</strong>) 
-      dans la <strong>modernisation</strong>, la <strong>sécurisation</strong> et 
-      l’<strong>industrialisation</strong> de leurs environnements IT.  
+      <strong>Tech Lead IA et Cloud-Native</strong> avec plus de
+      <strong>10 ans d’expérience</strong> dans le développement de solutions
+      d’automatisation, de plateformes internes et d’applications distribuées.
     </p>
     <p>
-      <strong>Pédagogue</strong>, je forme les équipes, accompagne leur 
-      <em>montée en compétences</em> et pilote des projets complexes en 
-      <strong>contexte international</strong>.
+      J’interviens sur l’ensemble du cycle de vie d’une solution :
+      <strong>conception, POC, développement d’API, architecture,
+      conteneurisation, CI/CD et industrialisation sur Kubernetes</strong>.
+      Je développe principalement avec <strong>Python et Go</strong> dans des
+      environnements sécurisés et fortement contraints.
+    </p>
+    <p>
+      Habitué aux environnements bancaires et internationaux, je définis les
+      standards techniques, accompagne les équipes et transforme les idées
+      innovantes en solutions robustes, maintenables et exploitables en production.
     </p>
 
 skill:
