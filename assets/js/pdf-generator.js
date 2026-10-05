@@ -19,14 +19,6 @@ function generatePDF() {
       const container = document.createElement("div");
       container.className = "pdf-content";
       container.innerHTML = html;
-      const experienceItems = container.querySelectorAll(
-        ".experiences-section > .item",
-      );
-      for (const index of [1, 6]) {
-        if (experienceItems[index]) {
-          experienceItems[index].classList.add("html2pdf__page-break");
-        }
-      }
 
       // Get name from the DOM (as defined in data.yml)
       const name = document.querySelector(".name").textContent;
@@ -92,11 +84,7 @@ function generatePDF() {
         .toPdf()
         .get("pdf")
         .then((pdf) => {
-          let pageCount = pdf.internal.getNumberOfPages();
-          if (pageCount === 4) {
-            pdf.deletePage(pageCount);
-            pageCount -= 1;
-          }
+          const pageCount = pdf.internal.getNumberOfPages();
           const pageWidth = pdf.internal.pageSize.getWidth();
           const pageHeight = pdf.internal.pageSize.getHeight();
           const sidebarWidth = pageWidth * 0.3;
