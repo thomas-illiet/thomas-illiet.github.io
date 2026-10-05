@@ -225,6 +225,40 @@ p {
     color: $text-grey;
   }
 
+  .company-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 10px;
+
+    .company {
+      margin-bottom: 0;
+    }
+  }
+
+  .experience-type {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .experience-type--employer {
+    color: #fff;
+    background: darken($theme-color, 10%);
+  }
+
+  .experience-type--assignment {
+    color: #24577f;
+    background: #e8f1f8;
+    border: 1px solid #91b8d7;
+  }
+
   .project-title {
     font-size: 16px;
     font-weight: 400;

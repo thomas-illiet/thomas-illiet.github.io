@@ -19,7 +19,14 @@
         <div class="time">{{ experience.time }}</div>
       </div><!--//upper-row-->
 
-      <div class="company">{{ experience.company }}</div>
+      <div class="company-line">
+        {% if experience.company %}
+        <span class="company">{{ experience.company }}</span>
+        {% endif %}
+        {% if experience.type_label %}
+        <span class="experience-type experience-type--{{ experience.type }}">{{ experience.type_label }}</span>
+        {% endif %}
+      </div>
 
     </div><!--//meta-->
 

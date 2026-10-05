@@ -130,6 +130,8 @@ experiences:
   - role: Consultant DevOps – IA & Innovation
     time: nov. 2024 - aujourd'hui
     company: BNP Paribas CIB
+    type: assignment
+    type_label: Mission client
     details: |
       - Conception et développement de POC utilisant l’intelligence artificielle pour automatiser et optimiser les activités de production et d’infrastructure
       - Développement d’API, d’outils internes et de plateformes avec Python et Go
@@ -144,6 +146,8 @@ experiences:
   - role: Consultant DevOps
     time: mars. 2024 - nov. 2024
     company: BNP Paribas
+    type: assignment
+    type_label: Mission client
     details: |
       - Développement d’une architecture CI/CD avec des pipelines modulaires et réutilisables
       - Automatisation des déploiements et des tests d’intégration
@@ -153,6 +157,8 @@ experiences:
   - role: Consultant en automatisation d'infrastructure Microsoft
     time: oct. 2019 - mars 2024
     company: BNP Paribas CIB
+    type: assignment
+    type_label: Mission client
     details: |
       - Recherche et développement pour l'amélioration de l'infrastructure 
       - Maintien en condition opérationnelle des outils/serveurs de l'équipe
@@ -163,6 +169,8 @@ experiences:
   - role: Consultant SysAdmin/DevOps
     time: jan. 2019 - sept. 2019
     company: Louis Vuitton
+    type: assignment
+    type_label: Mission client
     details: |
       - Administration et maintenance des caisses en magasin (Windows)
       - Automatisation des tâches récurrentes via des scripts PowerShell
@@ -171,6 +179,8 @@ experiences:
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2018
     company: Moët & Chandon
+    type: assignment
+    type_label: Mission client
     details: |
       - Audit des configurations GPO des serveurs Active Directory
       - Détection des incohérences en vue de la migration vers un point unique
@@ -180,6 +190,8 @@ experiences:
   - role: Consultant SysAdmin/DevOps
     time: avr. 2018 - déc. 2018
     company: Societe Generale
+    type: assignment
+    type_label: Mission client
     details: |
       - Participation à la conception des nouvelles images systèmes (Windows)
       - Collaboration avec les équipes de sécurité pour assurer la conformité des images
@@ -189,6 +201,8 @@ experiences:
   - role: Consultant Cloud et Infrastructure 
     time: déc. 2017 - mars 2018
     company: BNP Paribas
+    type: assignment
+    type_label: Mission client
     details: |
       - Participation aux projets d’études concernant le futur de l'infrastructure PKI
       - Création de maquettes pour tester et valider de nouvelles solutions
@@ -196,22 +210,39 @@ experiences:
       - Apport de support technique et fonctionnel aux équipes projets
   
 
+  - role: Consultant Cloud et Infrastructure
+    time: oct. 2017 - déc. 2017 · 3 mois
+    company: John Paul
+    type: assignment
+    type_label: Mission client
+    details: |
+      - Conseil et accompagnement sur les environnements Cloud et Infrastructure
+
+  - role: Migration Office 365
+    time: juil. 2017 - nov. 2017 · 5 mois
+    company: Alstom
+    type: assignment
+    type_label: Mission client
+
   - role: Consultant SysAdmin/DevOps
     time: juin. 2017 - aujourd'hui
     company: Metsys
+    type: employer
+    type_label: Employeur
     details: |
       - Accompagnement de clients grands comptes et PME dans leurs projets IT
       - Missions full-time chez les clients sur des environnements Linux / Windows / Cloud
       - Mise en place et automatisation d’infrastructures (CI/CD, monitoring, sécurisation)
       - Conseil, support et transfert de compétences auprès des équipes internes
 
-  - role: Autres missions
+  - role: Expériences précédentes
     time: 2013 - 2017
+    company: Mondelez, ISI Expert, Vitalliance, Digitick, Ophtalmic Compagnie
+    type: employer
+    type_label: Employeur
     details: |
-      - Consultant Cloud et Infrastructure – John Paul
-      - Migration Office 365 – Alstom
-      - Administrateur systèmes & réseaux – ISI Expert, Vitalliance
-      - Support IT – Mondelez, Digitick, Ophtalmic Compagnie
+      - Administration systèmes et réseaux
+      - Support IT
 
 projects:
   title: Projets IA & Innovation
